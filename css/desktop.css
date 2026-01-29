@@ -1,0 +1,173 @@
+.container {
+  max-width: 1264px;
+  padding: 0 50px;
+}
+
+.header {
+  padding: 20px 0 135px 0;
+  margin: 0 0 60px 0;
+
+  background-image: url('../images/banner-bg.jpg');
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 0 98px 0;
+}
+
+.header__menu-button {
+  display: none;
+}
+
+.header__logo {
+  margin: 0;
+  align-items: center;
+}
+
+.header__logo-img {
+  width: 179px;
+  height: 41px;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 32px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.header__title {
+  margin: 0 auto;
+  width: 800px;
+  font-size: 45px;
+  line-height: 1.5;
+}
+
+.header__nav-link {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: #ffffff;
+}
+
+.header__nav-link:hover,
+.header__nav-link:focus {
+  text-decoration: underline;
+}
+
+.trends {
+  margin: 0 0 60px 0;
+}
+
+.trends__title {
+  font-size: 20px;
+}
+
+.trends__title {
+  margin: 0 0 30px 0;
+}
+
+.trends__list {
+  flex-direction: row;
+}
+
+.trends__item {
+  width: calc(25% - 3px);
+  min-height: 318px;
+}
+
+.trend-card__title-link {
+  font-size: 20px;
+}
+
+.trend-card__content {
+  padding: 33px 28px 34px 31px;
+}
+
+.post {
+  display: flex;
+}
+
+.post__img {
+  max-width: 100%;
+  margin: 0;
+}
+
+.post__title-link {
+  font-size: 20px;
+}
+
+.post__img {
+  margin: 0;
+  width: 381px;
+  height: 294px;
+}
+
+.posts__list {
+  gap: 61px;
+}
+
+.posts__item::before {
+  content: none;
+}
+
+.post__inner {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 28px;
+}
+
+.main__sections {
+  display: flex;
+  gap: 115px;
+  margin: 0 0 17px 0;
+}
+
+.posts__item {
+  margin: 0;
+  padding: 0;
+}
+
+.post__meta {
+  margin: 0 0 45px 0;
+}
+
+.products {
+  margin: 0 0 70px 0;
+}
+
+.products__title {
+  font-size: 20px;
+}
+
+.products__item {
+  width: calc(33.33% - 44px);
+}
+
+.product-card {
+  margin-top: 200px;
+}
+
+.product-card__image {
+  top: -173px;
+}
+
+.product-card__title {
+  font-size: 20px;
+}
+
+.socials__list {
+  margin: 0 0 70px 0;
+}
