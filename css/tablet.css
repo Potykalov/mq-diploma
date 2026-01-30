@@ -184,6 +184,15 @@
   height: 100%;
 }
 
+.popup__form {
+  width: 390px;
+  padding: 52px 27px 30px;
+}
+
+.popup__title {
+  font-size: 18px;
+}
+
 @media (orientation: landscape) {
   .trends__item {
     width: calc(25% - 3px);

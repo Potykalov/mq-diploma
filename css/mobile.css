@@ -1,7 +1,10 @@
 @font-face {
   font-family: 'Open Sans';
-  src: url('https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff')
-    format('woff');
+  src:
+    url('/fonts/OpenSans-Regular.woff2') format('woff2'),
+    url('/fonts/OpenSans-Regular.woff') format('woff'),
+    url('/fonts/OpenSans-Regular.ttf') format('truetype');
+
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -9,8 +12,10 @@
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff')
-    format('woff');
+  src:
+    url('/fonts/OpenSans-Bold.woff2') format('woff2'),
+    url('/fonts/OpenSans-Bold.woff') format('woff'),
+    url('/fonts/OpenSans-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -956,6 +961,225 @@ body {
   color: #999999;
 
   user-select: none;
+}
+
+.popup {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+
+  background-color: rgba(0, 0, 0, 0.6);
+
+  overflow-y: auto;
+}
+
+.popup_hidden {
+  display: none;
+}
+
+.popup__form {
+  position: relative;
+  z-index: 10;
+
+  margin: auto;
+  padding: 28px 23px 30px;
+
+  background-color: #ffffff;
+}
+
+.popup__title {
+  position: relative;
+
+  margin: 0 0 27px 0;
+  padding: 0 0 13px 0;
+
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #000000;
+}
+
+.popup__title::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translatex(-50%);
+
+  width: 66px;
+  height: 3px;
+
+  background-color: #e1d9bd;
+}
+
+.popup__close-button {
+  position: absolute;
+  top: -32px;
+  right: 0;
+
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  margin: 0;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.select__label {
+  font-size: 15px;
+
+  color: #000000;
+}
+
+.select__field {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-color: #f4f7f6;
+  background-image: url('/svg/form-arrows.svg');
+  background-repeat: no-repeat;
+  background-size: 10px 18px;
+  background-position: right 18px top 50%;
+
+  border: 1px solid transparent;
+  border-radius: 0;
+
+  width: 100%;
+  padding: 15px 20px 15px 20px;
+
+  font-family: inherit;
+  font-size: 13px;
+  color: #707171;
+
+  outline: none;
+}
+
+.select__field:hover,
+.select__field:focus-visible {
+  border-bottom: 1px solid #b59f5b;
+  border-left: 1px solid #b59f5b;
+  border-right: 1px solid #b59f5b;
+}
+
+.select__label {
+  display: flex;
+  margin: 0 0 10px 0;
+
+  font-size: 13px;
+}
+
+.select__field {
+  margin: 0 0 33px 0;
+}
+
+.form-group {
+  margin: 0 0 35px 0;
+  padding: 0;
+
+  border: none;
+}
+
+.form-group__title {
+  margin: 0 0 12px 0;
+
+  font-size: 13px;
+
+  color: #000000;
+}
+
+.radio {
+  padding: 0 0 0 32px;
+}
+
+.radio:nth-last-child(1) {
+  margin: 0 0 0 29px;
+}
+
+.radio__label {
+  position: relative;
+
+  font-size: 13px;
+
+  color: #000000;
+}
+
+.radio__label::before {
+  position: absolute;
+  content: '';
+  top: -4px;
+  left: -31px;
+  width: 25px;
+  height: 25px;
+
+  border: 1px solid #b59f5b;
+  border-radius: 50%;
+}
+
+.radio__input:checked + .radio__label::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -27px;
+  width: 17px;
+  height: 17px;
+
+  background-color: #b59f5b;
+  border-radius: 50%;
+}
+
+.textarea__label {
+  font-size: 13px;
+
+  color: #000000;
+}
+
+.textarea__label {
+  display: flex;
+  margin: 0 0 8px 0;
+}
+
+.textarea__field {
+  width: 100%;
+  min-height: 155px;
+  padding: 20px 22px 20px 22px;
+
+  font-size: 13px;
+
+  color: #000000;
+  background-color: #f4f7f6;
+
+  border: 1px solid transparent;
+
+  outline: none;
+}
+
+.textarea__field::placeholder {
+  font-size: 13px;
+
+  color: #707171;
+}
+
+.textarea__field:hover,
+.textarea__field:focus-visible {
+  border-bottom: 1px solid #b59f5b;
+  border-left: 1px solid #b59f5b;
+  border-right: 1px solid #b59f5b;
 }
 
 @media (orientation: landscape) {

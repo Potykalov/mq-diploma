@@ -168,6 +168,52 @@
   font-size: 20px;
 }
 
+.popup__form {
+  padding: 52px 32px 30px;
+}
+
+.popup__title {
+  font-size: 20px;
+}
+
+.form-group__title {
+  margin: 0 0 6px 0;
+}
+
+.radio {
+  padding: 0 0 0 22px;
+}
+
+.radio:nth-last-child(1) {
+  margin: 0 0px 0 11px;
+}
+
+.radio__label::before {
+  top: 0px;
+  left: -20px;
+  width: 17px;
+  height: 17px;
+}
+
+.radio__input:checked + .radio__label::after {
+  top: 3px;
+  left: -17px;
+  width: 11px;
+  height: 11px;
+}
+
+.select__field {
+  background-position: right 8px top 50%;
+}
+
+.form-group {
+  margin: 0 0 35px 0;
+}
+
+.textarea__label {
+  margin: 0 0 5px 0;
+}
+
 .socials__list {
   margin: 0 0 70px 0;
 }

@@ -702,6 +702,67 @@
       </div>
     </main>
 
+    <section class="popup">
+      <form class="popup__form" method="post">
+        <button class="popup__close-button" type="button">
+          <img
+            class="popup__close-icon"
+            src="svg/form-x.svg"
+            width="28"
+            height="28"
+            alt=""
+          />
+        </button>
+        <h2 class="popup__title">Ваш фидбек</h2>
+        <label class="select">
+          <span class="select__label"
+            >Как часто вы&nbsp;заходите на&nbsp;сайт?</span
+          >
+          <select class="select__field" name="visit-frequency">
+            <option value="daily" selected>Почти каждый день</option>
+            <option value="weekly">Раз в несколько дней</option>
+            <option value="monthly">Раз в несколько неделей</option>
+            <option value="yearly">Несколько раз в год</option>
+          </select>
+        </label>
+        <fieldset class="form-group">
+          <legend class="form-group__title">
+            Вы&nbsp;подписаны на&nbsp;e-mail рассылку?
+          </legend>
+          <label class="radio">
+            <input
+              class="radio__input visually-hidden"
+              type="radio"
+              name="subscribe"
+              value="yes"
+              checked
+            />
+            <span class="radio__label">Да</span>
+          </label>
+          <label class="radio">
+            <input
+              class="radio__input visually-hidden"
+              type="radio"
+              name="subscribe"
+              value="no"
+            />
+            <span class="radio__label">Нет</span>
+          </label>
+        </fieldset>
+        <label class="textarea">
+          <span class="textarea__label">
+            Расскажите, какой контент вы хотели бы видеть на нашем сайте?
+          </span>
+          <textarea
+            class="textarea__field"
+            name="feedback"
+            placeholder="Может, больше рецептов?"
+          ></textarea>
+        </label>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+    </section>
+
     <footer class="footer">
       <div class="container">
         <address class="socials" aria-label="Соцсети">
