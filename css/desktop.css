@@ -101,18 +101,14 @@
 }
 
 .post__img {
-  max-width: 100%;
+  width: 100%;
   margin: 0;
+  width: 381px;
+  height: 294px;
 }
 
 .post__title-link {
   font-size: 20px;
-}
-
-.post__img {
-  margin: 0;
-  width: 381px;
-  height: 294px;
 }
 
 .posts__list {
@@ -162,6 +158,8 @@
 
 .product-card__image {
   top: -173px;
+
+  height: 204px;
 }
 
 .product-card__title {

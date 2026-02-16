@@ -360,6 +360,7 @@ body {
 .post__img {
   user-select: none;
   margin: 0 0 12px 0;
+  width: 100%;
 }
 
 .post__inner {
@@ -851,6 +852,12 @@ body {
   top: -258px;
   left: 50%;
   transform: translateX(-50%);
+
+  width: 100%;
+  padding: 0 20px;
+  height: 282px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .product-card__title {
@@ -924,21 +931,21 @@ body {
 }
 
 .socials__link--dribble {
-  background-image: url('/svg/001-dribbble.svg');
+  background-image: url('../svg/001-dribbble.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .socials__link--pinterest {
-  background-image: url('/svg/001-pinterest.svg');
+  background-image: url('../svg/001-pinterest.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .socials__link--tumblr {
-  background-image: url('/svg/003-tumblr.svg');
+  background-image: url('../svg/003-tumblr.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -175,6 +175,8 @@
 
 .product-card__image {
   top: -198px;
+
+  height: 227px;
 }
 
 .product-card__content {
