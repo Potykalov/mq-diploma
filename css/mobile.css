@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'Open Sans';
   src:
-    url('/fonts/OpenSans-Regular.woff2') format('woff2'),
-    url('/fonts/OpenSans-Regular.woff') format('woff'),
-    url('/fonts/OpenSans-Regular.ttf') format('truetype');
+    url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+    url('../fonts/OpenSans-Regular.woff') format('woff'),
+    url('../fonts/OpenSans-Regular.ttf') format('truetype');
 
   font-weight: 400;
   font-style: normal;
@@ -13,9 +13,9 @@
 @font-face {
   font-family: 'Open Sans';
   src:
-    url('/fonts/OpenSans-Bold.woff2') format('woff2'),
-    url('/fonts/OpenSans-Bold.woff') format('woff'),
-    url('/fonts/OpenSans-Bold.ttf') format('truetype');
+    url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+    url('../fonts/OpenSans-Bold.woff') format('woff'),
+    url('../fonts/OpenSans-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -613,7 +613,7 @@ body {
   width: 48px;
   height: 48px;
 
-  background-image: url('/svg/search.svg');
+  background-image: url('../svg/search.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 20px 20px;
@@ -852,7 +852,6 @@ body {
   top: -258px;
   left: 50%;
   transform: translateX(-50%);
-
   width: 100%;
   padding: 0 20px;
   height: 282px;
