@@ -1,3 +1,5 @@
+<img alt="GitHub License" src="https://img.shields.io/github/license/potykalov/mq-diploma">
+
 # Итоговая работа по модулю "Адаптивная и мобильная вёрстка"
 
 <img src="assets/layouts.jpg">
@@ -67,3 +69,9 @@ mq-diploma/
 ├── svg/               — векторные изображения (SVG)
 ├── index.html         — основная HTML страница
 └── README.md          — этот файл
+```
+
+## 📄 Лицензия
+
+Проект распространяется под лицензией MIT.  
+Подробнее см. файл [LICENSE](LICENSE).
